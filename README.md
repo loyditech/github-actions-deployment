@@ -76,5 +76,4 @@ github-actions-deployment/
  
 MIT License — free to use, modify, and distribute.
 
-https://roadmap.sh/projects/github-actions-deployment-workflow
  
