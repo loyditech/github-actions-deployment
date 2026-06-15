@@ -5,13 +5,26 @@ on:
     branches:
       - main
     paths:
-      - 'index.html'   # It only run if there's change in index.html
+      - 'index.html'
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install HTML validator
+        run: npm install -g html-validate
+
+      - name: Validate index.html
+        run: html-validate index.html
+
   deploy:
     runs-on: ubuntu-latest
+    needs: validate
     permissions:
-      contents: write   # Needed for push of gh-pages branch
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
