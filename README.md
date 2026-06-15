@@ -4,9 +4,6 @@ A simple CI/CD pipeline that automatically validates and deploys a static websit
  
 ![Deploy](https://github.com/loyditech/github-actions-deployment/actions/workflows/deploy.yml/badge.svg)
  
-> Part of the [roadmap.sh projects](https://roadmap.sh/projects/github-actions-deployment) series.
- 
----
  
 ## 🚀 Live Site
  
@@ -78,4 +75,6 @@ github-actions-deployment/
 ## 📄 License
  
 MIT License — free to use, modify, and distribute.
+
+https://roadmap.sh/projects/github-actions-deployment-workflow
  
